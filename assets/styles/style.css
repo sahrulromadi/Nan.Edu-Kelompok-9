@@ -1,0 +1,33 @@
+/* font */
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* custom color */
+.bg-primary {
+  background-color: #800 !important;
+}
+.text-yellow {
+  color: #f0e68c;
+}
+.text-yellow:hover {
+  color: #f0e68c;
+}
+.text-white-hover {
+  color: white;
+}
+.text-white-hover:hover {
+  color: #f0e68c !important;
+}
+
+/* custom button */
+.btn-blue {
+  border: 1px solid #0a0a5c;
+  background-color: #0a0a5c;
+  color: white;
+  transition: background-color 0.3s;
+}
+.btn-blue:hover {
+  background-color: white;
+  color: #0a0a5c;
+}
