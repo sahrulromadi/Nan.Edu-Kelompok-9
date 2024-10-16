@@ -7,6 +7,9 @@
 .bg-primary {
   background-color: #800 !important;
 }
+.text-primary {
+  color: #800 !important;
+}
 .text-yellow {
   color: #f0e68c;
 }
