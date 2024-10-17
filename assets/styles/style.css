@@ -1,6 +1,11 @@
-/* font */
+/* default */
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 /* custom color */
