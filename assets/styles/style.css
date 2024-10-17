@@ -28,7 +28,6 @@
   border: 1px solid #0a0a5c;
   background-color: #0a0a5c;
   color: white;
-  transition: background-color 0.3s;
 }
 .btn-blue:hover {
   background-color: white;
