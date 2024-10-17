@@ -10,6 +10,9 @@ html {
 .cursor-pointer {
   cursor: pointer;
 }
+.text-justify {
+  text-align: justify;
+}
 
 /* custom color */
 .bg-primary {
@@ -51,6 +54,16 @@ html {
 }
 .teacher-card:hover {
   transform: translateY(-10px);
+}
+
+/* testimonials */
+.img-rounded {
+  height: 100px;
+  width: 100px;
+}
+.testimonials-position {
+  top: -50px;
+  left: 20px;
 }
 
 /* scroll to top */
