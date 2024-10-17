@@ -7,6 +7,9 @@ html {
   padding: 0;
   height: 100%;
 }
+.cursor-pointer {
+  cursor: pointer;
+}
 
 /* custom color */
 .bg-primary {
@@ -14,6 +17,9 @@ html {
 }
 .text-primary {
   color: #800 !important;
+}
+.border-primary {
+  border-color: #800 !important;
 }
 .text-yellow {
   color: #f0e68c;

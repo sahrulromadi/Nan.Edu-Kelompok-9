@@ -41,4 +41,26 @@ $(document).ready(function () {
     // class dari bootstrap untuk menampilkan elemen validasi
     $(this).addClass("was-validated");
   });
+
+  // untuk FAQ
+  // ambil semua pertanyaan dengan class faq-item
+  $(".faq-item").each(function () {
+    const $q = $(this); // simpan referensi
+    const $answer = $q.find(".faq-answer");
+    const $icon = $q.find(".faq-question i");
+
+    // sembunyikan jawaban pada awal
+    $answer.hide();
+
+    // event listener ketika faq-item diklik
+    $q.on("click", function () {
+      if ($answer.is(":hidden")) {
+        $answer.slideDown(); // tampilkan jawaban + transisi
+        $icon.removeClass("bi-plus").addClass("bi-dash"); // ganti icon
+      } else {
+        $answer.slideUp(); // sembunyikan jawaban + transisi
+        $icon.removeClass("bi-dash").addClass("bi-plus"); // ganti icon
+      }
+    });
+  });
 });
