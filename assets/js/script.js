@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  // untuk navbar
+  // NAVBAR
   $(window).on("scroll", function () {
     const navbar = $("header");
     // jika scroll lebih dari 5 pixel
@@ -10,7 +10,23 @@ $(document).ready(function () {
     }
   });
 
-  // untuk contact
+  // SCROLL TO TOP
+  // menampilkan tombol ketika scroll ke bawah
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 250) {
+      $("#scrollToTop").removeClass("d-none"); // tampilkan tombol
+    } else {
+      $("#scrollToTop").addClass("d-none"); // sembunyikan tombol
+    }
+  });
+
+  // scroll ke atas saat tombol diklik
+  $("#scrollToTop").click(function () {
+    $("html, body").scrollTop(0); // scroll ke atas
+    return false; // mencegah form dikirim secara default
+  });
+
+  // CONTACT
   $("#contactForm").on("submit", function (event) {
     // mencegah form dikirim secara default
     event.preventDefault();
@@ -30,7 +46,7 @@ $(document).ready(function () {
     location.reload();
   });
 
-  // untuk login dan register
+  // LOGIN DAN REGISTER
   $(".needs-validation").on("submit", function (event) {
     // cek validasi apakah semua input dalam form valid sesuai aturan HTML
     if (!this.checkValidity()) {
@@ -42,7 +58,7 @@ $(document).ready(function () {
     $(this).addClass("was-validated");
   });
 
-  // untuk FAQ
+  // FAQ
   // ambil semua pertanyaan dengan class faq-item
   $(".faq-item").each(function () {
     const $q = $(this); // simpan referensi

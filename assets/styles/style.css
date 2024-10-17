@@ -52,3 +52,10 @@ html {
 .teacher-card:hover {
   transform: translateY(-10px);
 }
+
+/* scroll to top */
+#scrollToTop {
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
