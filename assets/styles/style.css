@@ -65,6 +65,12 @@ html {
   top: -50px;
   left: 20px;
 }
+.testimonials-border {
+  border-top: 2px solid;
+  border-left: 2px solid;
+  border-right: 10px solid;
+  border-bottom: 10px solid;
+}
 
 /* scroll to top */
 #scrollToTop {
