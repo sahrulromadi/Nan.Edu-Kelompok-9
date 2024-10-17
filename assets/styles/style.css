@@ -34,3 +34,11 @@
   background-color: white;
   color: #0a0a5c;
 }
+
+/* transitions */
+.teacher-card {
+  transition: transform 0.3s ease;
+}
+.teacher-card:hover {
+  transform: translateY(-10px);
+}
