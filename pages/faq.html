@@ -24,9 +24,9 @@
     <!-- custom css -->
     <link rel="stylesheet" href="../assets/styles/style.css" />
   </head>
-  <body class="bg-secondary-subtle">
+  <body>
     <!-- header -->
-    <header class="bg-primary fixed-top">
+    <header class="bg-red fixed-top">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid mx-4 mx-lg-5">
           <a class="navbar-brand text-yellow fw-bold fs-4" href="#">NAN.EDU</a>
@@ -59,11 +59,7 @@
                   >About Us</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-white-hover" href="testimonials.html"
-                  >Testimonials</a
-                >
-              </li>
+
               <li class="nav-item">
                 <a class="nav-link text-white-hover" href="contact.html"
                   >Contact Us</a
@@ -74,7 +70,7 @@
               </li>
               <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
                 <a
-                  class="nav-link btn-blue rounded-5 py-2 px-4 d-inline-block"
+                  class="btn btn-dark rounded-2 py-2 px-4 d-inline-block"
                   href="login.html"
                   >Login</a
                 >
@@ -90,18 +86,20 @@
       <!-- about us -->
       <section class="p-5">
         <div class="container">
-          <h1 class="text-center fw-bold mb-5">Frequently Asked Questions</h1>
+          <h1 class="text-center fw-bold mb-5 text-red">
+            Frequently Asked Questions
+          </h1>
           <div class="row g-4">
             <!-- item -->
             <div class="col-md-6">
               <div
-                class="faq-item d-flex flex-column align-items-start pt-4 px-4 pb-2 bg-body-secondary shadow-sm rounded border border-2 border-primary cursor-pointer"
+                class="faq-item d-flex flex-column align-items-start pt-4 px-4 pb-2 shadow-sm rounded border border-2 border-red cursor-pointer"
               >
                 <div
                   class="faq-question d-flex justify-content-between align-items-center w-100"
                 >
                   <p>Apakah kelas ini dapat diikuti oleh semua kalangan?</p>
-                  <i class="bi bi-plus fs-3 pb-3 text-primary"></i>
+                  <i class="bi bi-plus fs-3 pb-3 text-red"></i>
                 </div>
                 <div class="faq-answer mt-2" style="display: none">
                   <p>
@@ -116,13 +114,13 @@
             <!-- item -->
             <div class="col-md-6">
               <div
-                class="faq-item d-flex flex-column align-items-start pt-4 px-4 pb-2 bg-body-secondary shadow-sm rounded border border-2 cursor-pointer border-primary"
+                class="faq-item d-flex flex-column align-items-start pt-4 px-4 pb-2 shadow-sm rounded border border-2 cursor-pointer border-red"
               >
                 <div
                   class="faq-question d-flex justify-content-between align-items-center w-100"
                 >
                   <p>Apa manfaat dari mengikuti kelas ini?</p>
-                  <i class="bi bi-plus fs-3 pb-3 text-primary"></i>
+                  <i class="bi bi-plus fs-3 pb-3 text-red"></i>
                 </div>
                 <div class="faq-answer mt-2" style="display: none">
                   <p>
@@ -138,13 +136,13 @@
             <!-- item -->
             <div class="col-md-6">
               <div
-                class="faq-item d-flex flex-column align-items-start pt-4 px-4 pb-2 bg-body-secondary shadow-sm rounded border border-2 cursor-pointer border-primary"
+                class="faq-item d-flex flex-column align-items-start pt-4 px-4 pb-2 shadow-sm rounded border border-2 cursor-pointer border-red"
               >
                 <div
                   class="faq-question d-flex justify-content-between align-items-center w-100"
                 >
                   <p>Berapa lama durasi dalam 1 kelas?</p>
-                  <i class="bi bi-plus fs-3 pb-3 text-primary"></i>
+                  <i class="bi bi-plus fs-3 pb-3 text-red"></i>
                 </div>
                 <div class="faq-answer mt-2" style="display: none">
                   <p>
@@ -159,13 +157,13 @@
             <!-- item -->
             <div class="col-md-6">
               <div
-                class="faq-item d-flex flex-column align-items-start pt-4 px-4 pb-2 bg-body-secondary shadow-sm rounded border border-2 cursor-pointer border-primary"
+                class="faq-item d-flex flex-column align-items-start pt-4 px-4 pb-2 shadow-sm rounded border border-2 cursor-pointer border-red"
               >
                 <div
                   class="faq-question d-flex justify-content-between align-items-center w-100"
                 >
                   <p>Bagaimana proses pembelajaran dilakukan?</p>
-                  <i class="bi bi-plus fs-3 pb-3 text-primary"></i>
+                  <i class="bi bi-plus fs-3 pb-3 text-red"></i>
                 </div>
                 <div class="faq-answer mt-2" style="display: none">
                   <p>Proses pembelajaran dilakukan secara online</p>
@@ -179,36 +177,49 @@
     </main>
 
     <!-- footer -->
-    <footer class="text-center text-lg-start bg-primary text-white">
+    <footer class="text-center text-lg-start bg-red text-white">
       <div class="container p-4">
         <div
           class="row d-flex justify-content-center align-items-center gap-4 gap-md-0"
         >
           <div class="col-md-12 col-lg-6 mb-md-3 mb-lg-0">
-            <h5 class="text-uppercase mb-3">Tentang Kami</h5>
+            <h5 class="text-uppercase mb-3">Nan.Edu</h5>
             <p>Kami adalah perusahaan yang bergerak dibidang edukasi ekonomi</p>
           </div>
           <div class="col-md-6 col-lg-3">
-            <h5 class="text-uppercase mb-3">Link Terkait</h5>
-            <ul class="list-unstyled d-flex flex-column gap-1">
-              <li>About Us</li>
-              <li>Contact Us</li>
-              <li>Testimonials</li>
-            </ul>
+            <h5 class="mb-3">Sosial Media</h5>
+            <div
+              class="d-flex gap-4 justify-content-center justify-content-lg-start cursor-pointer"
+            >
+              <i class="bi bi-facebook fs-4 text-white-hover"></i>
+              <i class="bi bi-linkedin fs-4 text-white-hover"></i>
+              <i class="bi bi-instagram fs-4 text-white-hover"></i>
+            </div>
           </div>
           <div class="col-md-6 col-lg-3">
-            <h5 class="text-uppercase mb-3">Kontak Kami</h5>
-            <ul class="list-unstyled d-flex flex-column gap-1">
-              <li>Email : sahrull2047@gmail.com</li>
-              <li>Telepon : 085921508755</li>
-              <li>Alamat : KP BULAK TEKO NOMOR 204 RT 06 RW 08</li>
-            </ul>
+            <h5 class="my-3">Alamat</h5>
+            <div class="mb-2">
+              <span class="fw-bold">Coding IT</span>
+              <p>Depan Mall Grand Gallery</p>
+            </div>
+            <div>
+              <span class="fw-bold">Coding IT</span>
+              <p>Depan Mall Grand Gallery</p>
+            </div>
           </div>
         </div>
       </div>
       <div>
-        <p class="text-center bg-secondary p-2">Copyright &copy; 2024</p>
+        <p class="text-center bg-dark p-2">Copyright &copy; 2024</p>
       </div>
+
+      <!-- scroll to top -->
+      <button
+        id="scrollToTop"
+        class="btn btn-dark rounded-circle position-fixed d-none"
+      >
+        <i class="bi bi-arrow-up"></i>
+      </button>
     </footer>
 
     <!-- bootstrap js  -->

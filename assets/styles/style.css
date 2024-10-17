@@ -14,38 +14,26 @@ html {
   text-align: justify;
 }
 
-/* custom color */
-.bg-primary {
-  background-color: #800 !important;
+/* custom color red */
+.bg-red {
+  background-color: #800;
 }
-.text-primary {
-  color: #800 !important;
+.text-red {
+  color: #800;
 }
-.border-primary {
+.border-red {
   border-color: #800 !important;
+}
+
+/* custom color yellow */
+.bg-yellow {
+  background-color: #f0e68c;
 }
 .text-yellow {
   color: #f0e68c;
 }
 .text-yellow:hover {
   color: #f0e68c;
-}
-.text-white-hover {
-  color: white;
-}
-.text-white-hover:hover {
-  color: #f0e68c !important;
-}
-
-/* custom button */
-.btn-blue {
-  border: 1px solid #0a0a5c;
-  background-color: #0a0a5c;
-  color: white;
-}
-.btn-blue:hover {
-  background-color: white;
-  color: #0a0a5c;
 }
 
 /* transitions */
@@ -54,6 +42,14 @@ html {
 }
 .teacher-card:hover {
   transform: translateY(-10px);
+}
+
+/* navbar */
+.text-white-hover {
+  color: white;
+}
+.text-white-hover:hover {
+  color: #f0e68c !important;
 }
 
 /* testimonials */

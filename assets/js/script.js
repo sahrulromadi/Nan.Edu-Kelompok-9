@@ -65,17 +65,15 @@ $(document).ready(function () {
     const $answer = $q.find(".faq-answer");
     const $icon = $q.find(".faq-question i");
 
-    // sembunyikan jawaban pada awal
-    $answer.hide();
-
     // event listener ketika faq-item diklik
     $q.on("click", function () {
-      if ($answer.is(":hidden")) {
+      // cek apakah display === none
+      if ($answer.css("display") === "none") {
         $answer.slideDown(); // tampilkan jawaban + transisi
-        $icon.removeClass("bi-plus").addClass("bi-dash"); // ganti icon
+        $icon.removeClass("bi-plus").addClass("bi-dash"); // ganti ikon
       } else {
         $answer.slideUp(); // sembunyikan jawaban + transisi
-        $icon.removeClass("bi-dash").addClass("bi-plus"); // ganti icon
+        $icon.removeClass("bi-dash").addClass("bi-plus");
       }
     });
   });
