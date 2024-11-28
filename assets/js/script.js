@@ -77,4 +77,42 @@ $(document).ready(function () {
       }
     });
   });
+
+  // SLIDER
+  let currentIndex = 0;
+  const cardWidth = $(".col-12").outerWidth(true); // Lebar tiap card (termasuk margin)
+  const totalCards = $(".col-12").length; // Total card
+  const maxIndex = totalCards - 3; // Jumlah card yang dapat terlihat sekaligus (ubah sesuai kebutuhan)
+
+  // Fungsi untuk geser ke kanan
+  function slideNext() {
+    if (currentIndex < maxIndex) {
+      currentIndex++;
+    } else {
+      currentIndex = 0; // Reset ke awal jika sudah mencapai akhir
+    }
+    $(".course-grid .row").css(
+      "transform",
+      `translateX(-${currentIndex * cardWidth}px)`
+    );
+  }
+
+  // Fungsi untuk geser ke kiri
+  function slidePrev() {
+    if (currentIndex > 0) {
+      currentIndex--;
+    } else {
+      currentIndex = maxIndex; // Reset ke akhir jika sudah di awal
+    }
+    $(".slider-grid .slider-row").css(
+      "transform",
+      `translateX(-${currentIndex * cardWidth}px)`
+    );
+  }
+
+  // Event tombol next
+  $("#next-btn").click(slideNext);
+
+  // Event tombol previous
+  $("#prev-btn").click(slidePrev);
 });
